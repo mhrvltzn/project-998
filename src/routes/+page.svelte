@@ -7,29 +7,28 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="left">
             <a href="#about-div">ABOUT</a>
-            <a href="#">EXPLORE</a>
+            <a href="#categories">EXPLORE</a>
             <a href="#">SEARCH</a>
+        </nav>
+        <nav id="right">
             <a href="#">LOGIN</a>
         </nav>
     </header>
     <main class="top-div">
 
-        <!--    <img class="app-img" src="https://www.lionsroar.com/wp-content/uploads/2012/02/adeu3-788x1024.jpg" />-->
+<!--            <img class="app-img" src="https://www.lionsroar.com/wp-content/uploads/2012/02/adeu3-788x1024.jpg" />-->
         <img class="app-img" src="/images/landing_logo.png" />
         <h1 id="app-name">Bharat Shastra</h1>
         <h3 id="app-subtitle">A portal for learning & sharing Indian knowledge systems</h3>
     </main>
-
     <div class="about-div spaced-container" id="about-div">
-        <h2>About</h2>
+        <h2 style="font-family: 'Operator Mono'; font-size: 18px; font-weight: bolder">About</h2>
         <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         <p class="para">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
     </div>
-
-    <div class="categories spaced-container">
-        <!--        <h2 style="font-family: Idlewild; text-align: left; font-size: 12px; margin-bottom: 30px; color: grey">Explore</h2>-->
+    <div class="categories spaced-container" id="categories">
         <div id="categories-list">
             <div>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Raja_Ravi_Varma_-_Sankaracharya.jpg/220px-Raja_Ravi_Varma_-_Sankaracharya.jpg">
@@ -58,42 +57,61 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>
-
 <style>
-    nav {
+    body {
+        /*background-color: #BFA09E;*/
+        background-color: black;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.05);
+        backdrop-filter: saturate(120%) blur(5px);
+        backface-visibility: hidden;
+        height: 40px;
+        position: fixed;
+        width: 100%;
+        /*padding: 0 300px 0 300px;*/
+    }
+
+    nav#left {
         display: flex;
         justify-content: left;
         gap: 40px;
-        background-color: rgba(0, 0, 0, 0.05);
-        height: 40px;
         align-items: center;
         padding-left: 300px;
         /*padding: 0 300px 0 300px;*/
-        position: fixed;
-        top: 0;
-        width: 100%;
-        backdrop-filter: saturate(120%) blur(5px);
-        backface-visibility: hidden;
     }
+
+    nav#right {
+        display: flex;
+        justify-content: right;
+        gap: 40px;
+        align-items: center;
+        padding-right: 300px;
+    }
+
 
     nav a {
         color: whitesmoke;
         text-decoration: none;
         font-family: "Operator Mono";
         font-weight: bold;
-        font-size: 13px;
+        font-size: 12px;
+        letter-spacing: 1px;
     }
 
     .top-div {
         height: 70vh;
-        min-height: 600px;
+        min-height: 650px;
         background-color: #BFA09E;
         color: seashell;
         text-align: center;
         padding-top: 40px;
+        overflow: auto;
     }
 
     #categories-list {
@@ -107,10 +125,6 @@
         /*flex-grow: ;*/
         /*flex-basis: ;*/
 
-    }
-
-    body {
-        margin: 0;
     }
 
     #categories-list img {
@@ -140,7 +154,6 @@
         line-height: 23px;
         letter-spacing: 1px;
         overflow: auto;
-        /*font-style: italic;*/
         font-family: Ideal;
 
     }
@@ -178,7 +191,7 @@
     #app-subtitle {
         font-style: italic;
         font-weight: normal;
-        font-size: 18px;
+        font-size: 17px;
     }
 
     @font-face {
