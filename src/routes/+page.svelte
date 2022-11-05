@@ -60,9 +60,6 @@
 </body>
 </html>
 <style>
-    :root {
-        --side-nav: 4.8rem;
-    }
     body {
         /*background-color: #BFA09E;*/
         background-color: black;
@@ -84,7 +81,7 @@
         justify-content: left;
         gap: 40px;
         align-items: center;
-        padding-left: 300px;
+        padding-left: 17%;
         /*padding: 0 300px 0 300px;*/
     }
     nav#right {
@@ -92,7 +89,7 @@
         justify-content: right;
         gap: 40px;
         align-items: center;
-        padding-right: 300px;
+        padding-right: 17%;
     }
     nav a {
         color: whitesmoke;
@@ -135,7 +132,7 @@
         /*flex-direction: column;*/
         justify-content: space-between;
         align-items: center;
-        gap: 40px;
+        gap: 5%;
         height: fit-content;
         flex-wrap: wrap;
         /*flex-grow: ;*/
@@ -165,7 +162,7 @@
     }
 
     .spaced-container {
-        padding: 70px 15%;
+        padding: 70px 17%;
     }
 
     .app-img {
