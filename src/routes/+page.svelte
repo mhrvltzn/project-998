@@ -16,7 +16,7 @@
             <a href="#">LOGIN</a>
         </nav>
     </header>
-    <main class="top-div">
+    <main class="top-div spaced-container">
 
 <!--            <img class="app-img" src="https://www.lionsroar.com/wp-content/uploads/2012/02/adeu3-788x1024.jpg" />-->
         <img class="app-img" src="/images/landing_logo.png" />
@@ -107,9 +107,28 @@
         background-color: #BFA09E;
         color: seashell;
         text-align: center;
-        padding-top: 40px;
-        overflow: auto;
     }
+    .app-img {
+        margin-top: 60px;
+        height: 400px;
+        width: 300px;
+        size: letter portrait;
+        border-radius: 100px;
+    }
+
+    #app-name {
+        font-weight: bolder;
+        font-size: 35px;
+        font-family: Requiem;
+        letter-spacing: 4px;
+    }
+
+    #app-subtitle {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 17px;
+    }
+
     .para {
         font-size: 16px;
         line-height: 23px;
@@ -122,7 +141,6 @@
         background-color: #E6CFCD;
         /*background-color: #F0DEDC;*/
         height: fit-content;
-        min-width: 300px;
     }
     .about-div h2 {
         color: black;
@@ -165,27 +183,7 @@
 
     .spaced-container {
         padding: 70px 17%;
-    }
-
-    .app-img {
-        margin-top: 60px;
-        height: 400px;
-        width: 300px;
-        size: letter portrait;
-        border-radius: 100px;
-    }
-
-    #app-name {
-        font-weight: bolder;
-        font-size: 35px;
-        font-family: Requiem;
-        letter-spacing: 4px;
-    }
-
-    #app-subtitle {
-        font-style: italic;
-        font-weight: normal;
-        font-size: 17px;
+        min-width: 300px;
     }
 
     @font-face {
