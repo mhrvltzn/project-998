@@ -24,7 +24,7 @@
         <h3 id="app-subtitle">A portal for learning & sharing Indian knowledge systems</h3>
     </main>
     <div class="about-div spaced-container" id="about-div">
-        <h2 style="font-family: 'Operator Mono'; font-size: 18px; font-weight: bolder">About</h2>
+        <h2 style="font-family: 'Op Mono Medium'; font-size: 18px; font-weight: bolder;">About</h2>
         <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         <p class="para">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
     </div>
@@ -98,7 +98,7 @@
     nav a {
         color: whitesmoke;
         text-decoration: none;
-        font-family: "Operator Mono";
+        font-family: 'Op Mono Medium';
         font-weight: bold;
         font-size: 12px;
         letter-spacing: 1px;
@@ -134,7 +134,7 @@
     }
 
     .categories {
-        font-family: "Operator Mono";
+        font-family: 'Op Mono Medium';
         font-weight: bolder;
     }
 
@@ -199,6 +199,20 @@
         font-style: normal;
         font-weight: 50;
         src: url('/fonts/OperatorMono-Light.otf'); /* IE9 Compat Modes */
+    }
+
+    @font-face {
+        font-family: 'Op Mono Book';
+        font-style: normal;
+        font-weight: bold;
+        src: url('/fonts/OperatorMono-Book.otf'); /* IE9 Compat Modes */
+    }
+
+    @font-face {
+        font-family: 'Op Mono Medium';
+        font-style: normal;
+        font-weight: bold;
+        src: url('/fonts/OperatorMono-Medium.otf'); /* IE9 Compat Modes */
     }
 
     @font-face {
