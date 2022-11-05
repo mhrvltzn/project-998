@@ -60,6 +60,9 @@
 </body>
 </html>
 <style>
+    :root {
+        --side-nav: 4.8rem;
+    }
     body {
         /*background-color: #BFA09E;*/
         background-color: black;
@@ -76,7 +79,6 @@
         width: 100%;
         /*padding: 0 300px 0 300px;*/
     }
-
     nav#left {
         display: flex;
         justify-content: left;
@@ -85,7 +87,6 @@
         padding-left: 300px;
         /*padding: 0 300px 0 300px;*/
     }
-
     nav#right {
         display: flex;
         justify-content: right;
@@ -93,8 +94,6 @@
         align-items: center;
         padding-right: 300px;
     }
-
-
     nav a {
         color: whitesmoke;
         text-decoration: none;
@@ -103,7 +102,6 @@
         font-size: 12px;
         letter-spacing: 1px;
     }
-
     .top-div {
         height: 70vh;
         min-height: 650px;
@@ -113,6 +111,23 @@
         padding-top: 40px;
         overflow: auto;
     }
+    .para {
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 1px;
+        overflow: auto;
+        font-family: Ideal;
+
+    }
+    .about-div {
+        background-color: #E6CFCD;
+        /*background-color: #F0DEDC;*/
+        height: fit-content;
+        min-width: 300px;
+    }
+    .about-div h2 {
+        color: black;
+    }
 
     #categories-list {
         letter-spacing: 2px;
@@ -121,9 +136,12 @@
         justify-content: space-between;
         align-items: center;
         gap: 40px;
-        height: 330px;
+        height: fit-content;
+        flex-wrap: wrap;
         /*flex-grow: ;*/
         /*flex-basis: ;*/
+        padding-top: 30px;
+        padding-bottom: 30px;
 
     }
 
@@ -136,6 +154,7 @@
     .categories {
         font-family: 'Op Mono Medium';
         font-weight: bolder;
+        background-color: #F0DEDC;
     }
 
     #categories-list p {
@@ -146,31 +165,7 @@
     }
 
     .spaced-container {
-        padding: 70px 300px;
-    }
-
-    .para {
-        font-size: 16px;
-        line-height: 23px;
-        letter-spacing: 1px;
-        overflow: auto;
-        font-family: Ideal;
-
-    }
-
-    .about-div {
-        background-color: #E6CFCD;
-        /*background-color: #F0DEDC;*/
-        height: fit-content;
-    }
-
-    .about-div h2 {
-        color: black;
-    }
-
-    .categories {
-        background-color: #F0DEDC;
-
+        padding: 70px 15%;
     }
 
     .app-img {
