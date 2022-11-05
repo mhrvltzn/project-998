@@ -79,7 +79,8 @@
     nav#left {
         display: flex;
         justify-content: left;
-        gap: 40px;
+        /*gap: 40px;*/
+        gap: 20%;
         align-items: center;
         padding-left: 17%;
         /*padding: 0 300px 0 300px;*/
@@ -87,9 +88,10 @@
     nav#right {
         display: flex;
         justify-content: right;
-        gap: 40px;
+        gap: 20%;
         align-items: center;
         padding-right: 17%;
+        padding-left: 20px;
     }
     nav a {
         color: whitesmoke;
